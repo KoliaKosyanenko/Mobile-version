@@ -43,6 +43,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
 
 /*------------HEADER-MOBILE------------*/
@@ -166,7 +167,6 @@ img {
   background-position: center;
   background-size: cover;
   padding: 188px 0;
-  max-width: 1440px;
 }
 
 .hero-text {
@@ -236,7 +236,8 @@ img {
 }
 
 .feature-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
   gap: 24px;
   text-align: center;
 }
@@ -283,7 +284,8 @@ img {
 }
 
 .team-list {
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   gap: 24px;
 }
@@ -380,8 +382,7 @@ img {
 
 .portfolio-list {
   display: flex;
-  flex-wrap: wrap;
-  column-gap: 24px;
+  flex-direction: column;
   row-gap: 48px;
 }
 
@@ -395,7 +396,6 @@ img {
 }
 
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -439,15 +439,14 @@ img {
 /*------------FOOTER------------*/
 
 .footer-container {
-  display: block;
-  align-items: column;
-  margin: 0 auto;
-  padding: 0 160px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.footer-logo-text {
+/* .footer-logo-text {
   margin-right: 120px;
-}
+} */
 
 .footer {
   background-color: #2e2f42;
@@ -463,6 +462,7 @@ img {
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
+  text-align: center;
 }
 
 .logo-footer {
@@ -474,7 +474,9 @@ img {
   letter-spacing: 0.54px;
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
+  text-align: center;
+  width: 100%;
 }
 
 .white-logo {
@@ -492,6 +494,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   min-width: 264px;
+  margin-bottom: 72px;
 }
 
 .footer-icons-item {
@@ -764,9 +767,12 @@ img {
 
 .subscribe-form {
   display: flex;
+  flex-direction: column;
+  margin-top: 16px;
+  align-items: center;
 }
 .subscribe-form-wrap {
-  margin-left: 80px;
+  margin-top: 72px;
 }
 .form-title-subscribe {
   color: #fff;
@@ -774,7 +780,7 @@ img {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-bottom: 16px;
+  text-align: center;
 }
 
 .subscribe-input {
@@ -797,14 +803,13 @@ img {
 }
 
 .subscribe-btn {
-  min-width: 165px;
+  width: 165px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Roboto", sans-serif;
   font-size: 16px;
-  font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
@@ -812,7 +817,7 @@ img {
   background-color: #4d5ae5;
   border-radius: 4px;
   border: none;
-  margin-left: 24px;
+  margin-top: 16px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
